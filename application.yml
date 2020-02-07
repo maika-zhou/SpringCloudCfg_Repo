@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev
+  application: 
+    name: SpringCloudCfg-test-dev
+---
+spring:
+  profiles: default
+  application: 
+    name: SpringCloudCfg-test-default
