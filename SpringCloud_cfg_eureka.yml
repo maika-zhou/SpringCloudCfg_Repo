@@ -6,7 +6,7 @@ spring:
 spring:
   profiles: dev
   application: 
-    name: SpringCloud_Config_Eureka
+    name: SpringCloud_cfg_eureka
 server:
   port: 7001
 eureka: 
