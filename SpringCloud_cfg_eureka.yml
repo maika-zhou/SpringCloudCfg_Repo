@@ -6,35 +6,17 @@ spring:
 spring:
   profiles: dev
   application: 
-    name: SpringCloud_Config_Eureka
+    name: SpringCloud_cfg_eureka
 server:
   port: 7001
 security:
   basic:
-    enabled: true   # ÆôÓÃ°²È«ÈÏÖ¤´¦Àí
+    enabled: false   # å¯ç”¨å®‰å…¨è®¤è¯å¤„ç†
 eureka: 
-  client: # ¿Í»§¶Ë½øĞĞEureka×¢²áµÄÅäÖÃ
+  client: # å®¢æˆ·ç«¯è¿›è¡ŒEurekaæ³¨å†Œçš„é…ç½®
     service-url:
       defaultZone: http://eureka-7001.com:7001/eureka
-    register-with-eureka: false    # µ±Ç°µÄÎ¢·şÎñ²»×¢²áµ½eurekaÖ®ÖĞ
-    fetch-registry: false     # ²»Í¨¹ıeureka»ñÈ¡×¢²áĞÅÏ¢
-  instance: # eureakÊµÀı¶¨Òå
-    hostname: eureka-7001.com # ¶¨ÒåEurekaÊµÀıËùÔÚµÄÖ÷»úÃû³Æ
----
-spring:
-  profiles: beta
-  application: 
-    name: SpringCloud_Config_Eureka
-server:
-  port: 7001
-security:
-  basic:
-    enabled: true   # ÆôÓÃ°²È«ÈÏÖ¤´¦Àí
-eureka: 
-  client: # ¿Í»§¶Ë½øĞĞEureka×¢²áµÄÅäÖÃ
-    service-url:
-      defaultZone: http://eureka-7001.com:7001/eureka
-    register-with-eureka: false    # µ±Ç°µÄÎ¢·şÎñ²»×¢²áµ½eurekaÖ®ÖĞ
-    fetch-registry: false     # ²»Í¨¹ıeureka»ñÈ¡×¢²áĞÅÏ¢
-  instance: # eureakÊµÀı¶¨Òå
-    hostname: eureka-7001.com # ¶¨ÒåEurekaÊµÀıËùÔÚµÄÖ÷»úÃû³Æ
+    register-with-eureka: false    # å½“å‰çš„å¾®æœåŠ¡ä¸æ³¨å†Œåˆ°eurekaä¹‹ä¸­
+    fetch-registry: false     # ä¸é€šè¿‡eurekaè·å–æ³¨å†Œä¿¡æ¯
+  instance: # eureakå®ä¾‹å®šä¹‰
+    hostname: eureka-7001.com # å®šä¹‰Eurekaå®ä¾‹æ‰€åœ¨çš„ä¸»æœºåç§°
