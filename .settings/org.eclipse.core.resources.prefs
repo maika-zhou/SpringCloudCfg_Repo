@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//SpringCloud_eureka/SpringCloud_cfg_eureka.yml=UTF-8
+encoding//SpringCloud_sevice/SpringCloud_cfg_provider.yml=UTF-8
 encoding/SpringCloud_cfg_client.yml=UTF-8
-encoding/SpringCloud_cfg_eureka.yml=UTF-8
-encoding/SpringCloud_cfg_provider.yml=UTF-8
+encoding/SpringCloud_eureka=UTF-8
+encoding/SpringCloud_sevice=UTF-8
