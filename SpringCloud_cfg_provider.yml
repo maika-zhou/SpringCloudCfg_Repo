@@ -16,7 +16,7 @@ eureka:
     prefer-ip-address: true     # 访问的路径变为IP地址
 info:
   app.name: mldn-microcloud
-  company.name: www.mldn.cn
+  company.name: Infosys
   build.artifactId: $project.artifactId$
   build.version: $project.verson$
 mybatis:
@@ -38,7 +38,7 @@ spring:
       max-total: 5                                  # 最大的连接数
       max-wait-millis: 200                          # 等待连接获取的最大超时时间
   application:
-    name: microcloud-config-dept-client
+    name: SpringCloud-Config-Provider
 ---
 server: 
   port: 8001
@@ -53,7 +53,7 @@ eureka:
     prefer-ip-address: true     # 访问的路径变为IP地址
 info:
   app.name: mldn-microcloud
-  company.name: www.mldn.cn
+  company.name: Infosys
   build.artifactId: $project.artifactId$
   build.version: $project.verson$
 mybatis:
@@ -75,4 +75,4 @@ spring:
       max-total: 5                                  # 最大的连接数
       max-wait-millis: 200                          # 等待连接获取的最大超时时间
   application:
-    name: microcloud-config-dept-client
+    name: SpringCloud-Config-Provider
